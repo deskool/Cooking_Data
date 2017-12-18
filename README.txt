@@ -1,0 +1,1 @@
+Many of us do analyses with data, and we're all guilty of peeking at the testing set performance as we modify our algorithms. This script shows why that is such a dangerous habit, and one that we should all quit.
