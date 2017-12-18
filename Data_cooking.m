@@ -311,11 +311,11 @@ ylabel('Testing Performance')
 %  around it.
 
 %  The problem is that investigators may train multiple models on the
-%  training set, and then (to determine which is best) choose the one wite
-%  best peformance on the training, that also generalized to the testing set.
+%  training set, and then (to determine which is best) choose the one with the
+%  best peformance on the testing set.
 
-%  This process, however, is probalematic in the same way that engineering 
-%  the training/testing split is. For any given split, we can also identify a 
+%  This process, however, is problematic in the same way that engineering 
+%  the training/testing split was. For any given split, we can also identify a 
 %  random weight that creates bloated performance on the training/testing sets.
 
 
