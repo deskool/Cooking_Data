@@ -559,6 +559,6 @@ ylabel('Testing Performance')
 % aware that you are doing exactly what the code in this little script is
 % doing. You may never train on the data in the test sets, but your knowledge
 % of the data can leak into the way you engineer the models to produce an
-% over-engineered result that doesn't work in the real work.
+% over-engineered result that doesn't work in the real world.
 
 
