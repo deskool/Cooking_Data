@@ -3,9 +3,10 @@ feature_labels = t.Properties.VariableNames(1:end-1);                           
 num_features = length(feature_labels);                                                  % get the number of features
 for i = 1:num_features                                                                  % for each of the features...
     subplot(floor(num_features/10)+1,mod(num_features,10),i);                           % set up a subplot grid
-    title(feature_labels{i})                                                            % title each subplot with the feature name
+                                                            
     
     scatter(1:number_of_random_seeds,odds_ratios(i+1,:),num_features,test_AUC)          % plot the odds ratio for each fold, and color by AUC on test  
+    title(feature_labels{i})                                                            % title each subplot with the feature name
     hold on;                                                                            % keep working with this plot...
     
     if i == 1                                                                           % plot the y-label
