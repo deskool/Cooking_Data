@@ -5,7 +5,8 @@ for i = 1:num_features                                                          
     subplot(floor(num_features/10)+1,mod(num_features,10),i);                           % set up a subplot grid
                                                             
     
-    scatter(1:number_of_random_seeds,odds_ratios(i+1,:),num_features,test_AUC)          % plot the odds ratio for each fold, and color by AUC on test  
+    % scatter(1:number_of_random_seeds,odds_ratios(i+1,:),num_features,test_AUC)          % plot the odds ratio for each fold, and color by AUC on test  
+    scatter(1:number_of_random_seeds,odds_ratios(i+1,:),num_features,[0 0.25 1])        % plot the odds ratio, without a single color
     title(feature_labels{i})                                                            % title each subplot with the feature name
     hold on;                                                                            % keep working with this plot...
     

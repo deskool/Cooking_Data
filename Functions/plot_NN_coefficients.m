@@ -17,8 +17,10 @@ for i = 1:10
         end
         
         subplot(5,10,ind);
-        scatter(1:100,squeeze(weights(i,j,:)),4,test_AUC,'.');
+        % scatter(1:100,squeeze(weights(i,j,:)),4,test_AUC,'.');
+        scatter(1:100,squeeze(weights(i,j,:)),4,[0 0.25 1],'.');
         ind = ind+1;
+        ylim([-2 2])
            
     end
 end
